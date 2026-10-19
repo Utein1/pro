@@ -1,0 +1,15 @@
+# 依赖
+node_modules/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 打包产物
+*.zip
+*.crx
+
+# 编辑器
+.vscode/
+.idea/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>图片提取结果</title>
+  <link rel="stylesheet" href="viewer.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <div class="brand">
+      <span class="logo">图</span>
+      <span class="title">图片提取结果</span>
+      <span class="subtitle" id="page-subtitle"></span>
+    </div>
+    <div class="stats" id="stats">共 0 张 · 已选 0 张</div>
+    <div class="actions">
+      <button id="btn-select-all" class="btn">全选</button>
+      <button id="btn-invert" class="btn">反选</button>
+      <button id="btn-clear" class="btn">清空</button>
+      <button id="btn-download" class="btn btn-primary">下载所选图片</button>
+    </div>
+  </header>
+
+  <div id="empty" class="empty hidden">
+    <div class="empty-icon">图</div>
+    <p class="empty-title">暂无提取到的图片</p>
+    <p class="empty-hint">请到淘宝 / 京东 / 拼多多商家版商品详情页，点击右下角的「获取图片」按钮</p>
+  </div>
+
+  <main id="grid" class="grid"></main>
+
+  <div id="progress" class="progress hidden">
+    <div class="progress-bar">
+      <div id="progress-inner" class="progress-inner"></div>
+    </div>
+    <div id="progress-text" class="progress-text"></div>
+  </div>
+
+  <div id="lightbox" class="lightbox hidden">
+    <img id="lightbox-img" alt="预览" />
+    <button id="lightbox-close" class="lightbox-close" title="关闭">×</button>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="viewer.js"></script>
+</body>
+</html>
