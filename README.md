@@ -47,8 +47,22 @@
 ├── viewer.css        # 结果页样式
 ├── viewer.js         # 结果页逻辑：展示、勾选、下载、PNG 转换
 ├── make-icons.js     # 图标生成脚本（可选）
-└── icons/            # 插件图标
+├── icons/            # 插件图标
+└── docs/             # 官方宣传网站（静态）
+    ├── index.html
+    ├── styles.css
+    └── script.js
 ```
+
+## 官方网站
+
+`docs/` 目录下是一个纯静态的官方宣传网站（产品介绍、核心功能、安装步骤，多端适配），可直接本地双击 `docs/index.html` 预览。
+
+部署到 GitHub Pages：
+
+1. 在 GitHub 仓库的 Settings → Pages 中，将 Source 选为 `Deploy from a branch`。
+2. 分支选 `main`，目录选 `/docs`，保存。
+3. 稍等片刻即可通过 `https://<用户名>.github.io/pro/` 访问。
 
 ## 重新生成图标
 

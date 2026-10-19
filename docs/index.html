@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="电商图片提取下载器：在淘宝、京东、拼多多商家版商品详情页一键提取所有图片，以 PNG 格式批量下载。" />
+  <title>电商图片提取下载器 - 一键提取电商图片</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">
+        <span class="brand-logo">图</span>
+        <span class="brand-name">电商图片提取下载器</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="#intro">产品介绍</a>
+        <a href="#features">核心功能</a>
+        <a href="#install">安装步骤</a>
+        <a class="nav-cta" href="https://github.com/Utein1/pro" target="_blank" rel="noopener">查看源码</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏 Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-badge">Edge 浏览器插件</span>
+          <h1 class="hero-title">一键提取电商图片<br /><span class="gradient-text">PNG 批量下载</span></h1>
+          <p class="hero-subtitle">
+            在淘宝、京东、拼多多商家版的商品详情页，点击「获取图片」即可抓取页面全部商品图，
+            在新页面中预览勾选，一键保存为 PNG。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#install">立即安装</a>
+            <a class="btn btn-ghost" href="https://github.com/Utein1/pro" target="_blank" rel="noopener">查看源码</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="browser-mockup">
+            <div class="browser-bar">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="browser-url">item.taobao.com</span>
+            </div>
+            <div class="browser-body">
+              <div class="mock-grid">
+                <div class="mock-thumb"></div>
+                <div class="mock-thumb"></div>
+                <div class="mock-thumb"></div>
+                <div class="mock-thumb"></div>
+                <div class="mock-thumb"></div>
+                <div class="mock-thumb"></div>
+              </div>
+              <button class="mock-btn">获取图片</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产品介绍 -->
+    <section class="section" id="intro">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">产品介绍</h2>
+          <p class="section-desc">为电商从业者、运营与设计师打造的轻量图片采集工具。</p>
+        </div>
+
+        <div class="intro-grid">
+          <div class="intro-card reveal">
+            <h3>解决什么</h3>
+            <p>
+              手动逐张保存商品图费时费力，尤其面对懒加载的长图与主图轮播。本插件在详情页一键抓取全部图片，
+              集中预览后再批量下载，省去反复右键「另存为」的麻烦。
+            </p>
+          </div>
+          <div class="intro-card reveal">
+            <h3>适用场景</h3>
+            <p>
+              商品素材归档、竞品图片分析、详情页设计参考、图片二次编辑与整理。无论是运营、客服还是设计，
+              都能快速拿到统一的 PNG 素材。
+            </p>
+          </div>
+          <div class="intro-card reveal">
+            <h3>适用人群</h3>
+            <p>
+              需要经常整理商品图片的电商运营、美工设计、选品专员，以及对淘宝 / 京东 / 拼多多详情页
+              图片有采集需求的个人开发者。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心功能 -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">核心功能</h2>
+          <p class="section-desc">从提取到下载，一条龙完成图片采集。</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">⤓</div>
+            <h3>一键提取</h3>
+            <p>详情页右下角「获取图片」按钮，点击即可抓取整页商品图片。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">◫</div>
+            <h3>全面覆盖</h3>
+            <p>支持懒加载图、CSS 背景图、srcset 高清图，自动滚动触发加载。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">▦</div>
+            <h3>网格预览</h3>
+            <p>新页面网格展示全部图片，支持单张勾选、全选、反选与清空。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">⤢</div>
+            <h3>大图预览</h3>
+            <p>点击缩略图即可放大查看原图，挑选更精准。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">⬇</div>
+            <h3>PNG 批量下载</h3>
+            <p>下载时统一转换为 PNG 格式，自动归档到「电商图片」文件夹。</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon">◉</div>
+            <h3>多平台适配</h3>
+            <p>覆盖淘宝、京东、拼多多商家版三大平台，提取逻辑可扩展。</p>
+          </div>
+        </div>
+
+        <div class="platforms reveal">
+          <span class="platform-label">支持平台</span>
+          <div class="platform-tags">
+            <span class="platform-tag">淘宝</span>
+            <span class="platform-tag">天猫</span>
+            <span class="platform-tag">京东</span>
+            <span class="platform-tag">拼多多商家版</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 安装步骤 -->
+    <section class="section" id="install">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">安装步骤</h2>
+          <p class="section-desc">三步完成安装，马上开始使用。</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <div class="step-body">
+              <h3>打开扩展管理页</h3>
+              <p>在 Edge 浏览器地址栏输入 <code>edge://extensions</code> 并回车。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <div class="step-body">
+              <h3>开启开发人员模式</h3>
+              <p>打开页面左下角的「开发人员模式」开关。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <div class="step-body">
+              <h3>加载解压缩的扩展</h3>
+              <p>点击「加载解压缩的扩展」，选择插件项目根目录（包含 <code>manifest.json</code> 的文件夹）。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">4</span>
+            <div class="step-body">
+              <h3>开始使用</h3>
+              <p>进入淘宝 / 京东 / 拼多多商家版商品详情页，点击右下角「获取图片」按钮即可。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>准备好提升图片采集效率了吗？</h2>
+        <a class="btn btn-light" href="https://github.com/Utein1/pro" target="_blank" rel="noopener">前往 GitHub 获取源码</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span class="brand-logo small">图</span> 电商图片提取下载器</p>
+      <p class="footer-copy">© 2026 电商图片提取下载器 · <a href="https://github.com/Utein1/pro" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
